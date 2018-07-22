@@ -1,0 +1,712 @@
+
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	font-size: 12px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+    margin: 14px 0;
+}
+
+hr { 
+    border-style: solid;
+    border-color: #f1f1f1;
+    border-width: 0.5px;
+}
+
+a:link, a:hover, a:active, a:visited {
+    color: black;
+}
+
+/* ----- Top Banner styles ----- */
+.containerBanner {
+	margin-bottom: 0;
+	background-color: #ececec; /* light gray */
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+}
+
+.containerBanner h1 {
+	margin-bottom: 0.3em;
+}
+
+.containerBanner hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 38%;
+    margin-right: 40%;
+    border-top-style: inset;
+    border-width: 1.5px;
+    border-color: #ed0000; /* red */
+}
+
+.containerBanner img {
+    width: 100%;
+    min-height: 80px;
+}
+
+/* Centered text */
+.containerBanner .centered-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* ----- End Top Banner styles ----- */
+
+
+/* ----- Style breadcrumbs ----- */
+.containerBreadcrumb {
+    text-align: center;
+}
+
+.breadcrumb {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style: none;
+    background-color: #ececec;
+    margin: 0;
+}
+
+/* Display list items side by side */
+.breadcrumb li {
+    display: inline;
+    font-size: 12px;
+}
+
+/* Add a right arrow symbol (>) before/behind each list item */
+.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "\003e";
+}
+
+.breadcrumb a:link, .breadcrumb a:hover, .breadcrumb a:active, .breadcrumb a:visited {
+	text-decoration: none;
+	color: black;
+}
+/* ----- End breadcrumbs styles ----- */
+
+/* General Body styles */
+.containerBody, .containerSubBody {
+	margin: 7em auto;
+	width: 1140px;
+    font-size: 14px;
+}
+
+.containerBody section {
+	width: 740px;
+    display: inline-block;
+}
+
+.containerBody section .box {
+    margin-bottom: 45px;
+}
+
+.containerBody aside {
+	width: 330px;
+    display: inline-block;
+}
+
+.containerBody aside .box {
+    margin-bottom: 25px;
+}
+/* ----- End General Body styles ----- */
+
+
+/* ----- Head line styles ----- */
+.head-line {
+    margin-bottom: 25px;
+}
+
+.head-line .heading {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.head-line .sub-heading {
+	font-size: 18px;
+	font-weight: bold;
+	color: #696969;
+    margin-bottom: 20px
+}
+
+.head-line .location {
+    display: inline-block;
+    color: #808080;
+    font-weight: bold;
+}
+
+.head-line .options {
+    display: inline-block;
+    float: right;
+}
+
+.head-line .options a {
+    padding-left: 5px;
+}
+
+.head-line .options .item {
+    padding-left: 10px;
+}
+/* ----- End Head line styles ----- */
+
+.overview .title .dash {
+    display: inline-block;
+    width: 30px !important;
+}
+
+.overview .title .dash hr {
+    border-color: #ed0000;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 18px !important;
+    height: 2px;
+    background: #ed0000;
+}
+
+.overview .title span {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* ----- Tabs-Content styles ----- */
+.content-tabs {
+    background-color: #ececec;
+    border-radius: 4px;
+    border: 1px solid #fff;
+}
+
+.tabs-buttons {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #ed0000;
+    margin: 0;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.tabs-buttons li {
+    display: inline;
+    padding: 15px 20px;
+}
+
+.tabs-buttons a:link, .tabs-buttons a:hover, .tabs-buttons a:active, .tabs-buttons a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.tabs-buttons .active {
+    color: #000;
+    background-color: #ececec;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #ececec;
+}
+
+.tabs-buttons .active a {
+    color: #000;
+}
+
+.content-management, .content-features-list {
+    margin: 45px;
+    font-size: 14px;
+}
+
+.content-management p {
+    margin: 30px 0;
+    text-align: left;
+    line-height: 24px;
+}
+
+.content-features-list h3 {
+    text-transform: uppercase;
+}
+
+.content-features-list ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+    list-style: none;
+}
+
+.content-features-list li {
+    padding: 5px 0;
+}
+
+.content-features-list li:before {
+    font-family: AppleGothic, "Lucida Sans", Impact, Verdana, sans-serif;
+    content: "■";
+    color: #ed0000;
+    float: left;
+    margin: .2em -20px;
+    font-size: 70%;
+}
+/* ----- End tabs-content styles ----- */
+
+
+/* ----- Characteristics styles ----- */
+.characteristics .title {
+    background-color: #ed0000;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 4px;
+    border: none;
+}
+
+.characteristics .price {
+    font-size: 32px;
+    padding-right: 10px;
+}
+
+.characteristics .detailsContainer {
+    background-color: #ececec;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.characteristics .details {
+    padding: 20px 36px 44px 36px;
+    margin-top: 5px;
+}
+
+.characteristics .detail-info {
+    border-bottom: 1px solid #808080;
+    padding: 20px 0;
+}
+
+.characteristics .detail-info span{
+    color: #808080;
+}
+
+.characteristics .detail-info hr{
+    padding: 20px 0;
+    color: #808080;
+}
+/* ----- End characteristics styles ----- */
+
+
+/* ----- Statistics styles ----- */
+.statistics .stat-box {
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 3px solid #ececec;
+    border-radius: 4px;
+}
+
+.statistics .stat-box strong {
+    font-size: 16px;
+}
+
+.statistics .stat-box span {
+    vertical-align: middle;
+    padding-left: 8px;
+}
+
+.statistics .stat-box .name {
+    display: inline-block;
+}
+
+.statistics .stat-box .value {
+    text-transform: uppercase;
+    color: #ed0000;
+    padding-top: 7px;
+}
+/* ----- End statistics styles ----- */
+
+
+/* ----- Side banner styles ----- */
+.side-banner {
+    border-radius: 4px;
+    border: none;
+    border-bottom: 2.5px solid #ed0000;
+    overflow: hidden;
+}
+
+/* ----- Calculator styles ----- */
+.calculator {
+    padding: 32px;
+    border: 3px solid #ececec;
+    border-radius: 4px;
+}
+
+.calculator .title {
+    background: url('../../img/icons/icon-calculator.png') no-repeat top left;
+    padding-bottom: 28px;
+}
+
+.calculator .heading {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.calculator .sub-heading {
+    padding-left: 50px;
+    text-transform: capitalize;
+    color: #808080;
+    font-weight: normal;
+}
+
+.calculator .form input[type=submit] {
+    width: 120px;
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.calculator .form label {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.calculator .form input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0 22px 0;
+    display: inline-block;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+}
+/* ----- End calculator styles ----- */
+
+
+/* ----- Sub-body styles ----- */
+.containerSubBody h1 {
+    margin-top: 0;
+    height: 80px;
+    font-size: 50px;
+    font-weight: normal;
+    background: url('../../img/related.png') no-repeat bottom left;
+}
+
+.containerSubBody .box {
+    width: 360px;
+    height: 400px;
+    margin: 0 17px 30px 0;
+    display: inline-block;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+/* Image box styles */
+.containerSubBody .box .image-box {
+    position: relative;
+    margin-bottom: 7px;
+}
+
+.containerSubBody .box .image-box img {
+    width: 100%;
+}
+
+.containerSubBody .box .image-box .price-label {
+    position: absolute;
+    bottom: 7%;
+    right: 3%;
+    color: #fff;
+    background-color: #ed0000;
+    width: 165px;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.containerSubBody .box .image-box .price-label .price {
+    font-size: 14px;
+}
+
+.containerSubBody .box .image-box .price-label .msrp {
+    padding-top: 2px;
+}
+
+/* Car details styles */
+.containerSubBody .box .details {
+    margin-bottom: 30px;
+}
+
+.containerSubBody .box .details table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.containerSubBody .box .details th {
+    border: 1px solid #ececec;
+    color: #808080;
+    padding: 8px;
+}
+
+.containerSubBody .box .details th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.containerSubBody .box .details .col1 {
+    width: 30%;
+}
+.containerSubBody .box .details .col2 {
+    width: 40%;
+}
+.containerSubBody .box .details .col3 {
+    width: 10%;
+}
+.containerSubBody .box .details .col4 {
+    width: 20%;
+}
+
+/* Car title styles */
+.containerSubBody .box .title {
+    font-size: 20px;
+}
+
+/* Car description styles */
+.containerSubBody .box .description {
+    line-height: 24px;
+    color: #443e3e;
+}
+/* ----- End sub-body styles ----- */
+
+
+/* ----- Footer styles ----- */
+.containerFooter {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../../img/footer-banner.jpg') no-repeat;
+    background-size: 100% auto;
+    color: #fff;
+}
+
+.fast-links {
+    margin: 7em auto;
+    width: 1140px;
+    padding-top: 110px;
+    line-height: 24px;
+}
+
+.containerFooter .box {
+    width: 250px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.containerFooter .box.half-box{
+    width: 150px;
+}
+
+.containerFooter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.containerFooter li, .containerFooter p {
+    color: #ecececab;
+}
+
+.containerFooter li:before {
+    padding: 8px 8px 8px 0;
+    color: #f1f1f1;
+    content: "\003e";
+}
+
+.containerFooter .title span {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.containerFooter .address-info {
+    padding-left: 20px;
+}
+
+.containerFooter .address-info span {
+    color: #ed0000;
+}
+
+.containerFooter .copyrights {
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.containerFooter .copyrights a:link, .containerFooter .copyrights a:hover, .containerFooter .copyrights a:active, .containerFooter .copyrights a:visited {
+    color: #f1f1f1;
+}
+/* ----- End Footer styles ----- */
+
+
+/* --------- Additional styles ---------- */
+.dark {
+	filter: brightness(50%);
+}
+
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+    
+.title .dash {
+    display: inline-block;
+    width: 20px;
+}
+
+.title .dash hr {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 8px;
+    height: 2px;
+    border-color: #ed0000;
+    background: #ed0000;
+}
+
+.price, .msrp {
+    display: inline;
+}
+
+.float-left, .left-list {
+    float: left;
+}
+
+.float-right, .right-list {
+    float: right;
+}
+
+.icon {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.icon.small {
+    height: 14px;
+    width: 14px;
+}
+
+.icon.medium {
+    height: 18px;
+    width: 18px;
+}
+
+.icon.big {
+    height: 32px;
+    width: 32px;
+}
+/* --------- End additional styles ---------- */
+
+
+/* --------- Media ---------- */
+@media screen and (max-width: 600px) {
+
+    .containerBody, .containerSubBody {
+        margin: 5em 15px;
+        width: 570px;
+    }
+
+    .containerBody section, .containerBody aside {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+
+    .head-line .location, .head-line .options {
+        display: block;
+    }
+
+    .head-line .options {
+        display: block;
+        float: left;
+        margin-top: 10px;
+    }
+
+    .head-line .options .item {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+
+    .tabs-buttons {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .tabs-buttons li {
+        display: block;
+    }
+
+    .content-management, .content-features-list {
+        margin: 25px;
+    }
+
+    .side-banner img {
+        width: 100%;
+    }
+
+    .containerSubBody h1 {
+        font-size: 40px;
+    }
+
+    .containerSubBody .box {
+        width: 100%;
+        height: auto;
+        margin: 0 0 30px 0;
+        display: block;
+        border-bottom: 1px solid gray;
+    }
+
+    .containerFooter {
+        background-size: auto 100%;
+    }
+
+    .fast-links {
+        margin: 2em auto;
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .containerFooter .box, .containerFooter .box.half-box {
+        width: 100%;
+        display: block;
+    }
+
+    .containerFooter li {
+        display: inline;
+        padding-right: 20px;
+    }
+
+    .right-list {
+        float: left;
+    }
+}
